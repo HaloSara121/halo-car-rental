@@ -1,6 +1,6 @@
 # Halo Car Rental
 
-![https://i.imgur.com/Ux8GNAU.png](https://i.imgur.com/Ux8GNAU.png)
+![https://i.imgur.com/Ux8GNAU.png](https://i.imgur.com/7Ex5zot.png)
 
 ## Description
 This car rental website, is an online platform that allows users to rent cars for personal or business use. <br/>
