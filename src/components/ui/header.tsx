@@ -15,7 +15,7 @@ import { Button } from './button'
 
 export const Header = () => {
   return (
-    <header className="bg-transparent top-0 left-1/2 -translate-x-1/2 ta container px-4 pr-5 py-6 absolute">
+    <header className="bg-transparent top-0 left-1/2 -translate-x-1/2 ta container px-4 z-50 pr-5 py-6 absolute">
       <div className="hidden lg:flex justify-between items-center w-full text-zinc-900">
         <img className="h-12 lg:h-12" src={logo} alt="Car rental logo" />
 
