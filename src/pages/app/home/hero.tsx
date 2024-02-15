@@ -1,6 +1,7 @@
 import { CheckCircle2, ChevronRight } from 'lucide-react'
 
 import heroBackground from '@/assets/hero-bg.png'
+import heroCar from '@/assets/hero-car.png'
 import { Button } from '@/components/ui/button'
 
 export const Hero = () => {
@@ -8,11 +9,11 @@ export const Hero = () => {
     <div className="min-h-screen flex items-center">
       <img
         src={heroBackground}
-        className="absolute top-0 right-0 pointer-events-none lg:flex hidden"
+        className="absolute top-0 right-0 -z-0 pointer-events-none lg:flex hidden"
         alt="hero background image"
       />
 
-      <div className="lg:container">
+      <div className="lg:container flex items-center gap-16">
         <div className="font-[Poppins] text-center lg:text-left font-bold space-y-6">
           <strong className="text-xl">Plan your trip now</strong>
 
@@ -38,6 +39,12 @@ export const Hero = () => {
             </Button>
           </div>
         </div>
+
+        <img
+          src={heroCar}
+          className="pointer-events-none z-10 lg:flex hidden"
+          alt="hero background image"
+        />
       </div>
     </div>
   )
