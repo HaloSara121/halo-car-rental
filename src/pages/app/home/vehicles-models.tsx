@@ -4,6 +4,7 @@ import golf from '@/assets/golf.jpg'
 import mercedes from '@/assets/mercedes.jpg'
 import passat from '@/assets/passat.jpg'
 import toyota from '@/assets/toyota.jpg'
+import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
@@ -119,7 +120,6 @@ export const VehiclosModels = () => {
               VW Passat CC
             </TabsTrigger>
           </TabsList>
-
           {carModals.map((car) => (
             <TabsContent
               key={car.value}
@@ -132,45 +132,51 @@ export const VehiclosModels = () => {
                 alt={`${car.mark} ${car.model} image`}
               />
 
-              <div className="min-w-[20rem] border-2 border-zinc-700">
-                <div className="bg-primary border-3 flex justify-center text-3xl p-4 font-bold border-primary text-stone-50">
-                  {car.price} / rent per day
+              <div className="flex flex-col w-full items-center justify-center">
+                <div className="min-w-[20rem] border-2 border-zinc-700">
+                  <div className="bg-primary border-3 flex justify-center text-3xl p-4 font-bold border-primary text-stone-50">
+                    {car.price} / per day
+                  </div>
+                  <div className="flex gap-4 items-center w-full relative px-6 py-3 border-b-2 justify-between border-zinc-700">
+                    Model
+                    <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                    {car.model}
+                  </div>
+                  <div className="flex gap-4 items-center w-full relative px-6 py-3 border-b-2 justify-between border-zinc-700">
+                    Mark
+                    <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                    {car.mark}
+                  </div>
+                  <div className="flex gap-4 items-center w-full relative px-6 py-3 border-b-2 justify-between border-zinc-700">
+                    Year
+                    <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                    {car.year}
+                  </div>
+                  <div className="flex gap-4 items-center w-full relative px-6 py-3 border-b-2 justify-between border-zinc-700">
+                    Doors
+                    <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                    {car.doors}
+                  </div>
+                  <div className="flex gap-4 items-center w-full relative px-6 py-3 border-b-2 justify-between border-zinc-700">
+                    AC
+                    <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                    {car.ac}
+                  </div>
+                  <div className="flex gap-4 items-center w-full relative px-6 py-3 border-b-2 justify-between border-zinc-700">
+                    Transmission
+                    <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                    {car.transmission}
+                  </div>
+                  <div className="flex gap-4 items-center w-full relative px-6 py-3 justify-between">
+                    Fuel
+                    <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+                    {car.fuel}
+                  </div>
                 </div>
-                <div className="flex gap-4 items-center w-full relative px-8 py-4 border-b-2 justify-between border-zinc-700">
-                  Model
-                  <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  {car.model}
-                </div>
-                <div className="flex gap-4 items-center w-full relative px-8 py-4 border-b-2 justify-between border-zinc-700">
-                  Mark
-                  <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  {car.mark}
-                </div>
-                <div className="flex gap-4 items-center w-full relative px-8 py-4 border-b-2 justify-between border-zinc-700">
-                  Year
-                  <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  {car.year}
-                </div>
-                <div className="flex gap-4 items-center w-full relative px-8 py-4 border-b-2 justify-between border-zinc-700">
-                  Doors
-                  <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  {car.doors}
-                </div>
-                <div className="flex gap-4 items-center w-full relative px-8 py-4 border-b-2 justify-between border-zinc-700">
-                  AC
-                  <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  {car.ac}
-                </div>
-                <div className="flex gap-4 items-center w-full relative px-8 py-4 border-b-2 justify-between border-zinc-700">
-                  Transmission
-                  <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  {car.transmission}
-                </div>
-                <div className="flex gap-4 items-center w-full relative px-8 py-4 justify-between">
-                  Fuel
-                  <Separator className="w-[2px] h-6 bg-zinc-700 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-                  {car.fuel}
-                </div>
+
+                <Button className="w-[20rem] hover:border hover:text-primary hover:border-primary mt-4 font-bold text-xl h-12">
+                  Reserve now
+                </Button>
               </div>
             </TabsContent>
           ))}

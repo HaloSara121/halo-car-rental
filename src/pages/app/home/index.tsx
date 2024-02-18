@@ -3,6 +3,7 @@ import heroBackground from '@/assets/hero-bg.png'
 import { Advanteges } from './adventages'
 import { Hero } from './hero'
 import { RentCarForm } from './rent-car-form'
+import { Ruler } from './ruler'
 import { VehiclosModels } from './vehicles-models'
 
 export const Home = () => {
@@ -22,6 +23,7 @@ export const Home = () => {
           </section>
           <Advanteges />
           <VehiclosModels />
+          <Ruler />
         </div>
       </main>
     </>
