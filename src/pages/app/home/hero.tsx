@@ -8,8 +8,7 @@ export const Hero = () => {
     <section className="min-h-screen container justify-center flex items-center relative">
       <a
         href="#rent-car-form"
-        className="absolute bottom-12 left-1/2 -translate-x-1/2golf
-        golf"
+        className="absolute bottom-12 left-1/2 -translate-x-1/2"
       >
         <ChevronDown className="cursor-pointer z-20 h-12 w-12 animate-bounce" />
       </a>
