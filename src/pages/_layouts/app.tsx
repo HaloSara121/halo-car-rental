@@ -4,10 +4,10 @@ import { Header } from '@/components/ui/header'
 
 export const AppLayout = () => {
   return (
-    <div className="antialiased relative scroll-smooth min-h-screen bg-neutral-100 ">
+    <div className="antialiased relative min-h-screen bg-neutral-100">
       <Header />
 
-      <div className="flex flex-1">
+      <div className="flex flex-1 ">
         <Outlet />
       </div>
     </div>
