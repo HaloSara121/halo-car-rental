@@ -89,7 +89,9 @@ export const VehiclosModels = () => {
       <div className="container flex flex-col items-center gap-4 self-center">
         <h3 className="text-center text-xl">Vehicles Models</h3>
 
-        <strong className="text-center text-5xl">Our rental fleet</strong>
+        <strong className="text-center font-[Poppins] text-5xl">
+          Our rental fleet
+        </strong>
 
         <p className="text-center text-zinc-600">
           Choose from a variety of our amazing vehicles to rent for your next
@@ -124,18 +126,18 @@ export const VehiclosModels = () => {
           {carModals.map((car) => (
             <TabsContent
               key={car.value}
-              className="xl:jusrify-between flex-col gap-8 data-[state=active]:flex xl:w-full xl:flex-row"
+              className="flex-col gap-8  data-[state=active]:flex data-[state=active]:font-[Poppins] xl:w-full xl:flex-row xl:justify-between"
               value={car.value}
             >
               <img
                 src={car.image}
-                className="w-full  object-contain"
+                className="w-full object-contain"
                 alt={`${car.mark} ${car.model} image`}
               />
 
               <div className="ml-auto flex flex-col items-end justify-center">
                 <div className="min-w-[20rem] border-2 border-zinc-700">
-                  <div className="border-3 flex justify-center border-primary bg-primary p-4 text-3xl font-bold text-stone-50">
+                  <div className="border-3 flex justify-center border-primary bg-primary p-4 font-[Poppins] text-3xl font-bold text-stone-50">
                     {car.price} / per day
                   </div>
                   <div className="relative flex w-full items-center justify-between gap-4 border-b-2 border-zinc-700 px-6 py-3">

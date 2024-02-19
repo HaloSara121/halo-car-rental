@@ -23,7 +23,7 @@ export const WhyUs = () => {
           <div className=" flex max-w-2xl flex-col items-center gap-6 xl:items-start">
             <h3 className="text-center text-xl xl:text-left">Why choose us</h3>
 
-            <strong className="text-center text-5xl xl:text-left">
+            <strong className="text-center font-[Poppins] text-5xl xl:text-left">
               Best valued deals you will ever find
             </strong>
 
@@ -46,7 +46,9 @@ export const WhyUs = () => {
               <img className="w-32" src={copCar} alt="securecar icon" />
 
               <div className="lg: max-w-md space-y-4 text-center lg:text-start">
-                <strong className="text-2xl">Cross Country Drive</strong>
+                <strong className="font-[Poppins] text-2xl">
+                  Cross Country Drive
+                </strong>
                 <p className="text-zinc-600">
                   Take your driving experience to the next level with our
                   top-notch vehicles for your cross-country adventures.
@@ -58,7 +60,9 @@ export const WhyUs = () => {
               <img className="w-32" src={coin} alt="atendent icon" />
 
               <div className="lg: max-w-md space-y-4 text-center lg:text-start">
-                <strong className="text-2xl">All Inclusive Pricing</strong>
+                <strong className="font-[Poppins] text-2xl">
+                  All Inclusive Pricing
+                </strong>
                 <p className="text-zinc-600">
                   Get everything you need in one convenient, transparent price
                   with our all-inclusive pricing policy.
@@ -70,7 +74,9 @@ export const WhyUs = () => {
               <img className="w-32" src={holdingCoin} alt="fast car icon" />
 
               <div className="lg: max-w-md space-y-4 text-center lg:text-start">
-                <strong className="text-2xl">No Hidden Charges</strong>
+                <strong className="font-[Poppins] text-2xl">
+                  No Hidden Charges
+                </strong>
                 <p className="text-zinc-600">
                   Enjoy peace of mind with our no hidden charges policy. We
                   believe in transparent and honest pricing.
