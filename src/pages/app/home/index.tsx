@@ -16,7 +16,7 @@ export const Home = () => {
     <>
       <img
         src={heroBackground}
-        className="pointer-events-none absolute right-0 top-0 hidden xl:flex"
+        className="pointer-events-none absolute right-0 top-0 z-10 hidden xl:flex"
         alt="hero background image"
       />
 
