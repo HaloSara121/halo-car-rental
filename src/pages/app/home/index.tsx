@@ -5,17 +5,18 @@ import { Hero } from './hero'
 import { RentCarForm } from './rent-car-form'
 import { Ruler } from './ruler'
 import { VehiclosModels } from './vehicles-models'
+import { WhyUs } from './why-us'
 
 export const Home = () => {
   return (
     <>
       <img
         src={heroBackground}
-        className="absolute top-0 right-0 pointer-events-none xl:flex hidden"
+        className="pointer-events-none absolute right-0 top-0 hidden xl:flex"
         alt="hero background image"
       />
 
-      <main className="flex flex-col justify-center w-full relative">
+      <main className="relative flex w-full flex-col justify-center bg-stone-100">
         <div className="bg-gradient-to-b from-stone-100 to-white">
           <Hero />
           <section id="rent-car-form" className="container">
@@ -23,8 +24,9 @@ export const Home = () => {
           </section>
           <Advanteges />
           <VehiclosModels />
-          <Ruler />
         </div>
+        <Ruler />
+        <WhyUs />
       </main>
     </>
   )

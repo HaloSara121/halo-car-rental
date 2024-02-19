@@ -4,19 +4,19 @@ import secureCar from '@/assets/secure-car.png'
 
 export const Advanteges = () => {
   return (
-    <section className="py-24 justify-center flex items-center relative">
-      <div className="xl:container flex flex-col items-center gap-4">
+    <section className="relative flex items-center justify-center py-24">
+      <div className="flex flex-col items-center gap-4 xl:container">
         <h3 className="text-center text-xl">Plan your trip now</h3>
 
-        <strong className="text-5xl text-center">
+        <strong className="text-center text-5xl">
           Quick & easy car rental
         </strong>
 
-        <div className="flex justify-between items-center mt-12 flex-col lg:flex-row gap-12">
-          <div className=" flex items-center flex-col">
+        <div className="mt-12 flex flex-col items-center justify-between gap-12 lg:flex-row">
+          <div className=" flex flex-col items-center">
             <img className="w-56" src={secureCar} alt="securecar icon" />
 
-            <div className="text-center space-y-4">
+            <div className="space-y-4 text-center">
               <strong className="text-2xl">Select Car</strong>
               <p className="text-zinc-600">
                 We offers a big range of vehicles for all your driving needs. We
@@ -25,10 +25,10 @@ export const Advanteges = () => {
             </div>
           </div>
 
-          <div className=" flex items-center flex-col">
+          <div className=" flex flex-col items-center">
             <img className="w-56" src={atendent} alt="atendent icon" />
 
-            <div className="text-center space-y-4">
+            <div className="space-y-4 text-center">
               <strong className="text-2xl">Contact Operator</strong>
               <p className="text-zinc-600">
                 Our knowledgeable and friendly operators are always ready to
@@ -37,10 +37,10 @@ export const Advanteges = () => {
             </div>
           </div>
 
-          <div className=" flex items-center flex-col">
+          <div className=" flex flex-col items-center">
             <img className="w-56" src={fastCar} alt="fast car icon" />
 
-            <div className="text-center space-y-4">
+            <div className="space-y-4 text-center">
               <strong className="text-2xl">Let&apos;s Drive</strong>
               <p className="text-zinc-600">
                 Whether you&apos;re hitting the open road, we&apos;ve got you

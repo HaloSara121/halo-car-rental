@@ -4,7 +4,7 @@ import { Header } from '@/components/ui/header'
 
 export const AppLayout = () => {
   return (
-    <div className="antialiased relative min-h-screen bg-neutral-100">
+    <div className="relative min-h-screen bg-neutral-100 antialiased">
       <Header />
 
       <div className="flex flex-1 ">

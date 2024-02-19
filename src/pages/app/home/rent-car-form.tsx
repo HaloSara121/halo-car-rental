@@ -65,22 +65,22 @@ export const RentCarForm = () => {
   }, [pickUpDate, form])
 
   return (
-    <div className="w-full bg-white rounded-lg max-w-[32rem] lg:max-w-full mx-auto shadow-2xl rounde-md px-4 lg:p-12 py-6 flex items-center flex-col">
-      <strong className="font-[Poppins] font-bold text-2xl w-full">
+    <div className="rounde-md mx-auto flex w-full max-w-[32rem] flex-col items-center rounded-lg bg-white px-4 py-6 shadow-2xl lg:max-w-full lg:p-12">
+      <strong className="w-full font-[Poppins] text-2xl font-bold">
         Book a car
       </strong>
 
-      <div className="w-full mt-8">
+      <div className="mt-8 w-full">
         <Form {...form}>
           <form
             onSubmit={form.handleSubmit(onSubmit)}
-            className="grid grid-cols-1 lg:grid-cols-3 gap-4  items-center"
+            className="grid grid-cols-1 items-center gap-4  lg:grid-cols-3"
           >
             <FormField
               control={form.control}
               name="car-type"
               render={({ field }) => (
-                <FormItem className="flex flex-col w-full">
+                <FormItem className="flex w-full flex-col">
                   <FormLabel className="flex items-center gap-4 font-bold">
                     <Car />
                     Car type
@@ -182,12 +182,12 @@ export const RentCarForm = () => {
                     Pick up
                   </FormLabel>
                   <Popover>
-                    <PopoverTrigger asChild className="text-black w-full">
+                    <PopoverTrigger asChild className="w-full text-black">
                       <FormControl>
                         <Button
                           variant={'outline'}
                           className={cn(
-                            'w-full h-12 pl-3 text-left font-normal',
+                            'h-12 w-full pl-3 text-left font-normal',
                             !field.value && 'text-black',
                           )}
                         >
@@ -230,7 +230,7 @@ export const RentCarForm = () => {
                         <Button
                           variant={'outline'}
                           className={cn(
-                            'w-full h-12 pl-3 text-left font-normal',
+                            'h-12 w-full pl-3 text-left font-normal',
                             !field.value && 'text-black',
                           )}
                         >
@@ -260,7 +260,10 @@ export const RentCarForm = () => {
               )}
             />
 
-            <Button className="h-12 self-end" type="submit">
+            <Button
+              className="h-12 self-end hover:border hover:border-primary hover:text-primary"
+              type="submit"
+            >
               Search
             </Button>
           </form>

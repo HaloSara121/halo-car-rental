@@ -1,12 +1,12 @@
 export const Ruler = () => {
   return (
-    <section className="w-full bg-zinc-800 flex text-stone-50 items-center justify-center  py-16">
-      <div className="container flex flex-col gap-6 max-w-[42rem]">
-        <h1 className="text-center font-bold text-5xl">
+    <section className="flex w-full items-center justify-center bg-zinc-800 py-16  text-stone-50">
+      <div className="container flex max-w-[42rem] flex-col gap-6">
+        <h1 className="text-center text-5xl font-bold">
           Save big with out cheap car rental!
         </h1>
 
-        <strong className="text-xl font-normal text-center">
+        <strong className="text-center text-xl font-normal">
           Top Airports. Local Suppliers.{' '}
           <span className="text-primary">24/7</span>
           Support.
