@@ -15,7 +15,7 @@ export const FAQ = () => {
         alt="faq car background"
       />
 
-      <div className="container relative z-10 flex flex-col items-center gap-4 bg-white xl:bg-transparent ">
+      <div className="container relative z-10  flex flex-col items-center gap-4 bg-white xl:bg-transparent ">
         <h3 className="text-center text-xl">FAQ</h3>
 
         <strong className="text-center font-[Poppins] text-5xl">
@@ -28,7 +28,7 @@ export const FAQ = () => {
         </p>
 
         <Accordion
-          className="mt-8 w-full max-w-4xl bg-white"
+          className="mt-8 w-full max-w-4xl rounded-lg bg-white"
           type="single"
           collapsible
         >

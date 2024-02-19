@@ -1,7 +1,9 @@
 import heroBackground from '@/assets/hero-bg.png'
 
 import { Advanteges } from './adventages'
+import { DownloadApp } from './download-app'
 import { FAQ } from './faq'
+import { Footer } from './footer'
 import { Hero } from './hero'
 import { RentCarForm } from './rent-car-form'
 import { Ruler } from './ruler'
@@ -18,8 +20,8 @@ export const Home = () => {
         alt="hero background image"
       />
 
-      <main className="relative flex w-full flex-col justify-center bg-stone-100 font-[Rubik]">
-        <div className="bg-gradient-to-b  from-stone-100 to-white">
+      <main className="relative flex w-full flex-col justify-center overflow-x-hidden bg-stone-100 font-[Rubik]">
+        <div className="bg-gradient-to-b from-stone-100 to-white">
           <Hero />
           <section id="rent-car-form" className="container">
             <RentCarForm />
@@ -31,6 +33,8 @@ export const Home = () => {
         <WhyUs />
         <Testimonials />
         <FAQ />
+        <DownloadApp />
+        <Footer />
       </main>
     </>
   )
